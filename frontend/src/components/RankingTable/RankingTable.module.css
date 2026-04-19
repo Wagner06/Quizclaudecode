@@ -1,0 +1,88 @@
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(245, 166, 35, 0.2);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table thead tr {
+  background: rgba(26, 35, 126, 0.6);
+}
+
+.table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: #F5A623;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 0.65rem 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.table tbody tr:hover {
+  background: rgba(245, 166, 35, 0.08);
+}
+
+.rowFirst td {
+  background: rgba(245, 166, 35, 0.12) !important;
+  color: #F5A623;
+}
+
+.rowHighlighted td {
+  background: rgba(208, 2, 27, 0.15) !important;
+  color: #ff6b6b;
+}
+
+.rank {
+  font-weight: 700;
+  text-align: center !important;
+  width: 48px;
+}
+
+.nickname {
+  font-weight: 700;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loading,
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  gap: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(245, 166, 35, 0.2);
+  border-top-color: #F5A623;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

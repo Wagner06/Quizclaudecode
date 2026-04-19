@@ -1,0 +1,75 @@
+.token {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  width: 100px;
+  min-width: 80px;
+  border: 4px solid;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  user-select: none;
+  background-color: #1a1a2e;
+}
+
+@media (min-width: 768px) {
+  .token {
+    width: 130px;
+  }
+}
+
+.token:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px currentColor;
+}
+
+.token:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.tokenTrue {
+  border-color: #F5A623;
+  color: #F5A623;
+}
+
+.tokenTrue:hover:not(:disabled) {
+  background-color: rgba(245, 166, 35, 0.15);
+}
+
+.tokenFalse {
+  border-color: #D0021B;
+  color: #D0021B;
+}
+
+.tokenFalse:hover:not(:disabled) {
+  background-color: rgba(208, 2, 27, 0.15);
+}
+
+.tokenDisabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.label {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .icon {
+    font-size: 2.5rem;
+  }
+  .label {
+    font-size: 0.875rem;
+  }
+}
