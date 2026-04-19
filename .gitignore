@@ -1,7 +1,84 @@
+# =========================
+# Dependencies
+# =========================
 node_modules/
+**/node_modules/
+
+# =========================
+# Build / output
+# =========================
 dist/
+build/
+coverage/
+**/dist/
+**/build/
+
+# =========================
+# Environment files / secrets
+# =========================
 .env
-data/quiz.db
+.env.*
+!.env.example
+!.env*.example
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Database / local data
+# =========================
+*.db
 *.db-shm
 *.db-wal
+*.sqlite
+*.sqlite3
+backend/data/
+data/
+
+# =========================
+# Cache / temp
+# =========================
+.tmp/
+temp/
+tmp/
+.cache/
+.vite/
+.turbo/
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Editor / OS
+# =========================
 .DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# =========================
+# Runtime / PID files
+# =========================
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# Optional: local Claude / AI files
+# Descomente se houver arquivos locais
+# sensíveis dentro de .claude
+# =========================
+# .claude/local/
+# .claude/cache/
+# .claude/tmp/
